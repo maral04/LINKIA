@@ -91,6 +91,16 @@ return tel.intValue();
 
 }
 
+//•	Dos contactos se consideran iguales si tienen el mismo número de teléfono.
+//•	El hashCode se calcula dividiendo el número de teléfono entre 100 y sumándole la longitud del nombre del contacto.
+//Try equal etc
+public int hashCode(){
+    return (int) employeeId *
+                firstName.hashCode() *
+                lastName.hashCode();
+}
+
+
 /**
 
 * Saber si un nombre esta en el diccionario
